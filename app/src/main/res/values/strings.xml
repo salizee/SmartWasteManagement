@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SmartWaste</string>
+    <string name="btn_add_request">+ Add Request</string>
+    <string name="btn_about">About</string>
+    <string name="btn_login">Login</string>
+    <string name="empty_list_message">No requests yet. Tap + to add.</string>
+</resources>

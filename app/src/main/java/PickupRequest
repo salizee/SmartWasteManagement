@@ -1,0 +1,40 @@
+package com.example.smartwaste;
+
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "pickup_requests")
+public class PickupRequest {
+
+    @PrimaryKey(autoGenerate = true)
+    private long id;
+
+    private String name;        // requester name
+    private String address;     // pickup address
+    private String note;        // extra notes
+    private String date;        // request date
+
+    // Constructor
+    public PickupRequest(String name, String address, String note, String date) {
+        this.name = name;
+        this.address = address;
+        this.note = note;
+        this.date = date;
+    }
+
+    // Getters & Setters
+    public long getId() { return id; }
+    public void setId(long id) { this.id = id; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
+
+    public String getNote() { return note; }
+    public void setNote(String note) { this.note = note; }
+
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
+}

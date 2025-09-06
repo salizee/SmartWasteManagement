@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.SmartWaste" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- ✅ Apply global font -->
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <!-- Optionally, a bold version for titles -->
+    <style name="SmartWasteHeading">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+</resources>
