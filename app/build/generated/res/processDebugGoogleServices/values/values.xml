@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">264232652300</string>
+    <string name="google_api_key" translatable="false">AIzaSyD7BJPFFJA4ENjvYZdXqpg8gZam2WTolJ8</string>
+    <string name="google_app_id" translatable="false">1:264232652300:android:97d3dde2cc7656f12f6829</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD7BJPFFJA4ENjvYZdXqpg8gZam2WTolJ8</string>
+    <string name="google_storage_bucket" translatable="false">smartwaste-86ed8.firebasestorage.app</string>
+    <string name="project_id" translatable="false">smartwaste-86ed8</string>
+</resources>

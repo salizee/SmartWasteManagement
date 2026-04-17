@@ -8,9 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.smartwaste.database.AppDatabase;
+import com.example.smartwaste.database.PickupRequest;
+import com.example.smartwaste.database.PickupRequestDao;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements RequestAdapter.OnRequestClickListener {
+public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RequestAdapter adapter;
@@ -22,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements RequestAdapter.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // UI elements
         recyclerView = findViewById(R.id.recyclerView);
         addRequestBtn = findViewById(R.id.addRequestBtn);
         loginBtn = findViewById(R.id.loginBtn);
@@ -31,37 +35,39 @@ public class MainActivity extends AppCompatActivity implements RequestAdapter.On
 
         db = AppDatabase.getInstance(this);
 
-        // Setup RecyclerView and pass DB to adapter for deletion
-        List<PickupRequest> requests = db.pickupRequestDao().getAllRequests();
-        adapter = new RequestAdapter(requests, this, db);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        // Adapter initialized once
+        adapter = new RequestAdapter(this, new ArrayList<>(), db.pickupRequestDao());
         recyclerView.setAdapter(adapter);
 
-        // Navigation buttons
-        loginBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, LoginActivity.class)));
-        registerBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, RegisterActivity.class)));
-        aboutBtn.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AboutActivity.class)));
+        addRequestBtn.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, AddEditRequestActivity.class)));
 
-        // Add request button
-        addRequestBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, AddEditRequestActivity.class);
-            startActivity(intent);
-        });
+        loginBtn.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, LoginActivity.class)));
+
+        registerBtn.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, RegisterActivity.class)));
+
+        aboutBtn.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, AboutActivity.class)));
+    }
+
+    private void loadRequests() {
+        new Thread(() -> {
+            PickupRequestDao dao = db.pickupRequestDao();
+            List<PickupRequest> requests = dao.getAllRequests();
+
+            runOnUiThread(() -> {
+                adapter.setRequests(requests);
+            });
+        }).start();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        // Refresh list whenever returning to this activity
-        List<PickupRequest> requests = db.pickupRequestDao().getAllRequests();
-        adapter.setRequests(requests);
-    }
-
-    @Override
-    public void onRequestClick(PickupRequest request) {
-        // Edit existing request
-        Intent intent = new Intent(MainActivity.this, AddEditRequestActivity.class);
-        intent.putExtra("requestId", request.getId());
-        startActivity(intent);
+        loadRequests();
     }
 }

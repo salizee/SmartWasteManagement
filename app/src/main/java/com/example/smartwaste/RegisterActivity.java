@@ -3,57 +3,74 @@ package com.example.smartwaste;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smartwaste.database.AppDatabase;
+import com.example.smartwaste.database.User;
+
 public class RegisterActivity extends AppCompatActivity {
 
-    EditText usernameInput, passwordInput, confirmPasswordInput;
-    Button registerBtn, loginRedirectBtn;
-    AppDatabase db;
+    private EditText usernameEditText, passwordEditText;
+    private CheckBox isAdminCheckBox;
+    private Button registerButton;
+
+    private AppDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register); // keep your layout
+        setContentView(R.layout.activity_register);
 
-        usernameInput = findViewById(R.id.usernameInput);
-        passwordInput = findViewById(R.id.passwordInput);
-        confirmPasswordInput = findViewById(R.id.confirmPasswordInput);
-        registerBtn = findViewById(R.id.registerBtn);
-        loginRedirectBtn = findViewById(R.id.loginRedirectBtn);
+        usernameEditText = findViewById(R.id.usernameEditText);
+        passwordEditText = findViewById(R.id.passwordEditText);
+        isAdminCheckBox = findViewById(R.id.isAdminCheckBox);
+        registerButton = findViewById(R.id.registerButton);
 
         db = AppDatabase.getInstance(this);
 
-        registerBtn.setOnClickListener(v -> {
-            String username = usernameInput.getText().toString().trim();
-            String password = passwordInput.getText().toString().trim();
-            String confirmPassword = confirmPasswordInput.getText().toString().trim();
+        registerButton.setOnClickListener(v -> {
+            String username = usernameEditText.getText().toString().trim();
+            String password = passwordEditText.getText().toString().trim();
+            String role = isAdminCheckBox.isChecked() ? "admin" : "user";
 
-            if (username.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
-                Toast.makeText(this, "Fill all fields!", Toast.LENGTH_SHORT).show();
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Enter username and password", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            if (!password.equals(confirmPassword)) {
-                Toast.makeText(this, "Passwords do not match!", Toast.LENGTH_SHORT).show();
-                return;
-            }
+            new Thread(() -> {
+                try {
+                    User existingUser = db.userDao().getUserByUsername(username);
+                    if (existingUser != null) {
+                        runOnUiThread(() ->
+                                Toast.makeText(RegisterActivity.this, "Username already exists", Toast.LENGTH_SHORT).show()
+                        );
+                        return;
+                    }
 
-            if (db.userDao().getUserByUsername(username) != null) {
-                Toast.makeText(this, "Username already exists!", Toast.LENGTH_SHORT).show();
-                return;
-            }
+                    // Insert new user
+                    User newUser = new User(username, password, role);
+                    db.userDao().insert(newUser);
 
-            db.userDao().registerUser(new User(username, password));
-            Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, LoginActivity.class));
-            finish();
+                    runOnUiThread(() -> {
+                        Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+
+                        // Optionally, redirect to LoginActivity after registration
+                        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                        startActivity(intent);
+                        finish();
+                    });
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    runOnUiThread(() ->
+                            Toast.makeText(RegisterActivity.this, "Registration failed", Toast.LENGTH_SHORT).show()
+                    );
+                }
+            }).start();
         });
-
-        loginRedirectBtn.setOnClickListener(v ->
-                startActivity(new Intent(this, LoginActivity.class)));
     }
 }

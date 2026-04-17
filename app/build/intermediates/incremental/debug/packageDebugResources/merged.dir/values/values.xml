@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="waste_categories">
+        <item>Plastic</item>
+        <item>Glass</item>
+        <item>Metal</item>
+        <item>Organic</item>
+        <item>Electronic</item>
+    </string-array>
+    <color name="blueColor">#2196F3</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="gray_dark">#616161</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="green">#4CAF50</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="red">#F44336</color>
+    <color name="surface_dark">#121212</color>
+    <color name="surface_light">#F5F5F5</color>
+    <string name="app_name">SmartWaste</string>
+    <string name="btn_about">About</string>
+    <string name="btn_add_request">+ Add Request</string>
+    <string name="btn_login">Login</string>
+    <string name="empty_list_message">No requests yet. Tap + to add.</string>
+    <string name="gcm_defaultSenderId" translatable="false">264232652300</string>
+    <string name="google_api_key" translatable="false">AIzaSyD7BJPFFJA4ENjvYZdXqpg8gZam2WTolJ8</string>
+    <string name="google_app_id" translatable="false">1:264232652300:android:97d3dde2cc7656f12f6829</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD7BJPFFJA4ENjvYZdXqpg8gZam2WTolJ8</string>
+    <string name="google_storage_bucket" translatable="false">smartwaste-86ed8.firebasestorage.app</string>
+    <string name="project_id" translatable="false">smartwaste-86ed8</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:textColorSecondary">@color/gray_dark</item>
+
+        
+        <item name="android:windowBackground">@color/colorWhite</item>
+    </style>
+    <style name="SmartWasteHeading">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="Theme.SmartWaste" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+</resources>

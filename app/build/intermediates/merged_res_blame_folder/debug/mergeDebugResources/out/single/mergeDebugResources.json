@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_item_request.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/item_request.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_request_admin_item.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/request_admin_item.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_request_item.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/request_item.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_bg_input_field.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/bg_input_field.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_main.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/font_montserrat_regular.ttf.flat",
+        "source": "com.example.smartwaste.app-main-7:/font/montserrat_regular.ttf"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_btn_primary.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/btn_primary.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_user.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_user.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/anim_fade_in.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/anim/fade_in.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout-land_activity_admin_panel.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout-land/activity_admin_panel.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_edit_text_bg.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/edit_text_bg.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_bg_dark_surface.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/bg_dark_surface.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_admin_panel.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_admin_panel.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_login.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_bg_card.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_admin.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_add_edit_request.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_add_edit_request.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.smartwaste.app-pngs-0:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_about.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_about.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/font_montserrat_bold.ttf.flat",
+        "source": "com.example.smartwaste.app-main-7:/font/montserrat_bold.ttf"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/drawable_bg_gradient.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/drawable/bg_gradient.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_splash.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/layout_activity_register.xml.flat",
+        "source": "com.example.smartwaste.app-main-7:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.example.smartwaste.app-debug-5:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.smartwaste.app-main-7:/mipmap-hdpi/ic_launcher_round.webp"
+    }
+]

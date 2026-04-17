@@ -8,44 +8,75 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.smartwaste.database.AppDatabase;
+import com.example.smartwaste.database.User;
+
 public class LoginActivity extends AppCompatActivity {
 
-    EditText usernameInput, passwordInput;
-    Button loginBtn, registerRedirectBtn;
-    AppDatabase db;
+    private EditText usernameEditText, passwordEditText;
+    private Button loginButton, registerButton;
+
+    private AppDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login); // keep your layout
+        setContentView(R.layout.activity_login);
 
-        usernameInput = findViewById(R.id.usernameInput);
-        passwordInput = findViewById(R.id.passwordInput);
-        loginBtn = findViewById(R.id.loginBtn);
-        registerRedirectBtn = findViewById(R.id.registerRedirectBtn);
+        usernameEditText = findViewById(R.id.etUsername);
+        passwordEditText = findViewById(R.id.etPassword);
+        loginButton = findViewById(R.id.btnLogin);
+        registerButton = findViewById(R.id.btnRegister);
 
         db = AppDatabase.getInstance(this);
 
-        loginBtn.setOnClickListener(v -> {
-            String username = usernameInput.getText().toString().trim();
-            String password = passwordInput.getText().toString().trim();
+        loginButton.setOnClickListener(v -> {
+
+            String username = usernameEditText.getText().toString().trim();
+            String password = passwordEditText.getText().toString().trim();
 
             if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Enter all fields!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please enter username and password", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            User user = db.userDao().login(username, password);
-            if (user != null) {
-                Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(this, MainActivity.class)); // go to your home screen
-                finish();
-            } else {
-                Toast.makeText(this, "Invalid credentials!", Toast.LENGTH_SHORT).show();
-            }
+            new Thread(() -> {
+
+                User user = db.userDao().getUserByUsername(username);
+
+                runOnUiThread(() -> {
+
+                    if (user == null) {
+                        Toast.makeText(this, "User not found", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    if (user.getPassword() == null ||
+                            !user.getPassword().equals(password)) {
+
+                        Toast.makeText(this, "Incorrect credentials", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show();
+
+                    // 🔥 ROLE CHECK ADDED HERE
+                    String role = user.getRole();
+
+                    if (role != null && role.equalsIgnoreCase("admin")) {
+                        startActivity(new Intent(LoginActivity.this, AdminPanelActivity.class));
+                    } else {
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    }
+
+                    finish();
+                });
+
+            }).start();
         });
 
-        registerRedirectBtn.setOnClickListener(v ->
-                startActivity(new Intent(this, RegisterActivity.class)));
+        registerButton.setOnClickListener(v -> {
+            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+        });
     }
 }
