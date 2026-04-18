@@ -10,46 +10,47 @@ This project demonstrates **Java-based Android development**, focusing on user i
 
 ## 🎯 Objectives
 
-- Improve waste management efficiency  
-- Enable easy reporting of waste issues  
-- Support user interaction with waste collection services  
-- Promote environmental sustainability  
+* Improve waste management efficiency
+* Enable easy reporting of waste issues
+* Support user interaction with waste collection services
+* Promote environmental sustainability
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User Registration & Login System  
-- 🏠 Home Page Interface  
-- 👤 User Dashboard  
-- 🛠️ Admin Dashboard  
-- 📝 Waste Request Submission  
-- ⚙️ Request Processing System  
-- 📊 Local Database Storage (SQLite/Room)  
-- 📱 Clean and responsive UI  
+* 🔐 User Registration & Login System
+* 🏠 Home Page Interface
+* 👤 User Dashboard
+* 🛠️ Admin Dashboard
+* 📝 Waste Request Submission
+* ⚙️ Request Processing System
+* 📊 Local Database Storage (SQLite/Room)
+* 📱 Clean and responsive UI
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **Java** (Core Android Development)  
-- **Android Studio** (IDE)  
-- **XML** (UI Design)  
-- **SQLite / Room Database** (Local Storage)  
+* **Java** (Core Android Development)
+* **Android Studio** (IDE)
+* **XML** (UI Design)
+* **SQLite / Room Database** (Local Storage)
 
 ---
 
 ## 📂 Project Structure
 
+```
 SmartWasteManagement/
 │── app/
-│ ├── java/com/example/smartwaste/
-│ ├── res/layout/
-│ ├── res/values/
+│   ├── java/com/example/smartwaste/
+│   ├── res/layout/
+│   ├── res/values/
 │── gradle/
 │── build.gradle
 │── settings.gradle
-
+```
 
 ---
 
@@ -59,86 +60,97 @@ SmartWasteManagement/
 
 ```bash
 git clone https://github.com/salizee/SmartWasteManagement.git
+```
 
-2. Open Project
-Open Android Studio
-Click Open Project
-Select the cloned folder
-3. Run App
-Connect emulator or Android device
-Click ▶ Run
+### 2. Open Project
 
+* Open Android Studio
+* Click **Open Project**
+* Select the cloned folder
+
+### 3. Run App
+
+* Connect emulator or Android device
+* Click ▶ Run
+
+---
 
 ## 📸 App Screenshots
 
 ### 🔐 Login Page
-![Login](screenshots/Login_page.jpg)
 
----
+![Login Page](./screenshots/Login_page.jpg)
 
 ### 📝 Registration Page
-![Register](screenshots/Registration_page.jpg)
 
----
+![Registration Page](./screenshots/Registration_page.jpg)
 
 ### 🏠 Home Page
-![Home](screenshots/Home_page.jpg)
 
----
+![Home Page](./screenshots/Home_page.jpg)
 
 ### 👤 User Dashboard
-![User Dashboard](screenshots/User_dash_board.jpg)
 
----
+![User Dashboard](./screenshots/User_dash_board.jpg)
 
 ### 🛠️ Admin Dashboard
-![Admin Dashboard](screenshots/Admin_dash_board.jpg)
 
----
+![Admin Dashboard](./screenshots/Admin_dash_board.jpg)
 
 ### 📝 Request Page
-![Request](screenshots/Request_page.jpg)
 
----
+![Request Page](./screenshots/Request_page.jpg)
 
 ### ⚙️ Request Processing
-![Processing](screenshots/Request_processing_page.jpg)
+
+![Request Processing](./screenshots/Request_processing_page.jpg)
+
+### 🎯 Final Page
+
+![Final Page](./screenshots/Final_page.jpg)
 
 ---
 
-### 🎯 Final Page
-![Final](screenshots/Final_page.jpg)
+## 📌 Future Improvements
 
+* Firebase / cloud database integration
+* Real-time waste tracking system
+* GPS-based pickup optimization
+* Push notifications
+* Web-based admin dashboard
 
-📌 Future Improvements
-Firebase / cloud database integration
-Real-time waste tracking system
-GPS-based pickup optimization
-Push notifications
-Web-based admin dashboard
-🤝 Contribution
+---
+
+## 🤝 Contribution
 
 Contributions are welcome. Feel free to fork this repository and submit a pull request.
 
-📄 License
+---
+
+## 📄 License
 
 This project is for academic and educational purposes.
 
-👨‍💻 Author
+---
 
-Salisu M. Indabawa
+## 👨‍💻 Author
+
+**Salisu M. Indabawa**
 ICT Student | Data Scientist | Android Developer
 
-📧 Email: salisuindabawa@gmail.com
-
+📧 Email: [salisuindabawa@gmail.com](mailto:salisuindabawa@gmail.com)
 📍 Nigeria
 
-🌍 Impact
+---
+
+## 🌍 Impact
 
 This project contributes to:
 
-Cleaner environments
-Smart city development
-Digital transformation of waste management systems
+* Cleaner environments
+* Smart city development
+* Digital transformation of waste management systems
 
-⭐ If you find this project useful, please give it a star on GitHub!
+---
+
+⭐ *If you find this project useful, please give it a star on GitHub!*
