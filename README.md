@@ -1,77 +1,71 @@
 # ♻️ Smart Waste Management System (Android App)
 
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Language](https://img.shields.io/badge/Language-Java-blue)
+![IDE](https://img.shields.io/badge/IDE-Android%20Studio-orange)
+![Database](https://img.shields.io/badge/Database-Room%20%7C%20SQLite-lightgrey)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+
+---
+
 ## 📱 Overview
 
-The **Smart Waste Management System** is an Android application designed to improve waste collection and disposal processes through digital solutions. The app enables users to request waste pickup, report waste issues, and promote cleaner, more sustainable communities.
+The **Smart Waste Management System** is a mobile application designed to improve waste collection and disposal through digital solutions. It enables users to submit waste pickup requests, track processing status, and interact with a structured system that promotes cleaner and more sustainable communities.
 
-This project demonstrates **Java-based Android development**, focusing on user interaction, data management, and efficient service delivery using local storage (SQLite/Room) without external backend services.
-
----
-
-## 🎯 Objectives
-
-* Improve waste management efficiency
-* Enable easy reporting of waste issues
-* Support user interaction with waste collection services
-* Promote environmental sustainability
+This project demonstrates practical **Android development using Java**, focusing on **user experience, local data management, and real-world problem solving**.
 
 ---
 
-## 🚀 Features
+## 🎯 Key Features
 
-* 🔐 User Registration & Login System
-* 🏠 Home Page Interface
-* 👤 User Dashboard
-* 🛠️ Admin Dashboard
-* 📝 Waste Request Submission
-* ⚙️ Request Processing System
-* 📊 Local Database Storage (SQLite/Room)
-* 📱 Clean and responsive UI
+- 🔐 User Authentication (Login & Registration)  
+- 🏠 Home Page Interface  
+- 👤 User Dashboard  
+- 🛠️ Admin Dashboard  
+- 📝 Waste Pickup Request System  
+- ⚙️ Request Processing Workflow  
+- 💾 Local Database using Room (SQLite)  
+- 📱 Clean and responsive UI  
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-* **Java** (Core Android Development)
-* **Android Studio** (IDE)
-* **XML** (UI Design)
-* **SQLite / Room Database** (Local Storage)
+| Category | Technology |
+|----------|------------|
+| Language | Java |
+| IDE | Android Studio |
+| UI Design | XML |
+| Database | Room (SQLite) |
 
 ---
 
 ## 📂 Project Structure
 
-```
-SmartWasteManagement/
-│── app/
-│   ├── java/com/example/smartwaste/
-│   ├── res/layout/
-│   ├── res/values/
-│── gradle/
-│── build.gradle
-│── settings.gradle
-```
+SmartWasteManagement/  
+│── app/  
+│   ├── java/com/example/smartwaste/  
+│   ├── res/layout/  
+│   ├── res/values/  
+│── gradle/  
+│── build.gradle  
+│── settings.gradle  
 
 ---
 
-## ⚙️ Installation Guide
+## ⚙️ Installation
 
-### 1. Clone Repository
-
-```bash
+### 1️⃣ Clone Repository
 git clone https://github.com/salizee/SmartWasteManagement.git
-```
 
-### 2. Open Project
+### 2️⃣ Open Project
+- Open Android Studio  
+- Click Open Project  
+- Select project folder  
 
-* Open Android Studio
-* Click **Open Project**
-* Select the cloned folder
-
-### 3. Run App
-
-* Connect emulator or Android device
-* Click ▶ Run
+### 3️⃣ Run App
+- Connect emulator or Android device  
+- Click Run ▶  
 
 ---
 
@@ -79,76 +73,80 @@ git clone https://github.com/salizee/SmartWasteManagement.git
 
 ### 🔐 Login Page
 <p align="center">
-  <img src="./screenshots/Login_page.jpg" width="250"/>
+<img src="./screenshots/Login_page.jpg" width="220"/>
 </p>
 
 ### 📝 Registration Page
 <p align="center">
-  <img src="./screenshots/Registration_page.jpg" width="250"/>
+<img src="./screenshots/Registration_page.jpg" width="220"/>
 </p>
 
 ### 🏠 Home Page
 <p align="center">
-  <img src="./screenshots/Home_page.jpg" width="250"/>
+<img src="./screenshots/Home_page.jpg" width="220"/>
 </p>
 
 ### 👤 User Dashboard
 <p align="center">
-  <img src="./screenshots/User_dash_board.jpg" width="250"/>
+<img src="./screenshots/User_dash_board.jpg" width="220"/>
 </p>
 
 ### 🛠️ Admin Dashboard
 <p align="center">
-  <img src="./screenshots/Admin_dash_board.jpg" width="250"/>
+<img src="./screenshots/Admin_dash_board.jpg" width="220"/>
 </p>
 
 ### 📝 Request Page
 <p align="center">
-  <img src="./screenshots/Request_page.jpg" width="250"/>
+<img src="./screenshots/Request_page.jpg" width="220"/>
 </p>
 
-### ⚙️ Request Processing
+### ⚙️ Request Processing Page
 <p align="center">
-  <img src="./screenshots/Request_processing_page.jpg" width="250"/>
+<img src="./screenshots/Request_processing_page.jpg" width="220"/>
 </p>
 
 ### 🎯 Final Page
 <p align="center">
-  <img src="./screenshots/Final_page.jpg" width="250"/>
+<img src="./screenshots/Final_page.jpg" width="220"/>
 </p>
 
 ---
 
+## 💼 What This Project Demonstrates
 
-## 📌 Future Improvements
+- Android application architecture  
+- Room database implementation  
+- CRUD operations and data flow handling  
+- UI/UX design for mobile applications  
+- Real-world problem solving in waste management  
+- Git and version control workflow  
 
-* Firebase / cloud database integration
-* Real-time waste tracking system
-* GPS-based pickup optimization
-* Push notifications
-* Web-based admin dashboard
+---
+
+## 🚀 Future Improvements
+
+- Firebase cloud integration  
+- GPS-based waste pickup tracking  
+- Push notifications system  
+- Real-time admin dashboard  
+- Web-based admin panel  
 
 ---
 
 ## 🤝 Contribution
 
-Contributions are welcome. Feel free to fork this repository and submit a pull request.
-
----
-
-## 📄 License
-
-This project is for academic and educational purposes.
+Contributions are welcome. Feel free to fork and submit pull requests.
 
 ---
 
 ## 👨‍💻 Author
 
-**Salisu M. Indabawa**
-ICT Student | Data Scientist | Android Developer
+Salisu M. Indabawa  
+ICT Student | Data Scientist | Android Developer  
 
-📧 Email: [salisuindabawa@gmail.com](mailto:salisuindabawa@gmail.com)
-📍 Nigeria
+📧 Email: salisuindabawa@gmail.com  
+📍 Nigeria  
 
 ---
 
@@ -156,10 +154,10 @@ ICT Student | Data Scientist | Android Developer
 
 This project contributes to:
 
-* Cleaner environments
-* Smart city development
-* Digital transformation of waste management systems
+- ♻️ Cleaner environments  
+- 🌆 Smart city development  
+- 💡 Digital transformation of waste management systems  
 
 ---
 
-⭐ *If you find this project useful, please give it a star on GitHub!*
+⭐ If you find this project useful, please give it a star on GitHub!
