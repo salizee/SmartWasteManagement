@@ -78,38 +78,47 @@ git clone https://github.com/salizee/SmartWasteManagement.git
 ## 📸 App Screenshots
 
 ### 🔐 Login Page
-
-![Login Page](./screenshots/Login_page.jpg)
+<p align="center">
+  <img src="./screenshots/Login_page.jpg" width="250"/>
+</p>
 
 ### 📝 Registration Page
-
-![Registration Page](./screenshots/Registration_page.jpg)
+<p align="center">
+  <img src="./screenshots/Registration_page.jpg" width="250"/>
+</p>
 
 ### 🏠 Home Page
-
-![Home Page](./screenshots/Home_page.jpg)
+<p align="center">
+  <img src="./screenshots/Home_page.jpg" width="250"/>
+</p>
 
 ### 👤 User Dashboard
-
-![User Dashboard](./screenshots/User_dash_board.jpg)
+<p align="center">
+  <img src="./screenshots/User_dash_board.jpg" width="250"/>
+</p>
 
 ### 🛠️ Admin Dashboard
-
-![Admin Dashboard](./screenshots/Admin_dash_board.jpg)
+<p align="center">
+  <img src="./screenshots/Admin_dash_board.jpg" width="250"/>
+</p>
 
 ### 📝 Request Page
-
-![Request Page](./screenshots/Request_page.jpg)
+<p align="center">
+  <img src="./screenshots/Request_page.jpg" width="250"/>
+</p>
 
 ### ⚙️ Request Processing
-
-![Request Processing](./screenshots/Request_processing_page.jpg)
+<p align="center">
+  <img src="./screenshots/Request_processing_page.jpg" width="250"/>
+</p>
 
 ### 🎯 Final Page
-
-![Final Page](./screenshots/Final_page.jpg)
+<p align="center">
+  <img src="./screenshots/Final_page.jpg" width="250"/>
+</p>
 
 ---
+
 
 ## 📌 Future Improvements
 
